@@ -1,0 +1,34 @@
+1. import time
+   nama = input ("Input nama anda : ")
+   currentTime = int (time.strftime ('%H'))
+	if currentTime < 10 :
+   	   print ('Selamat pagi '+nama)
+	elif currentTime < 15 :
+   	   print ('Selamat siang '+nama)
+	elif currentTime < 18 :
+    	   print ('Selamat siang '+nama)
+	elif currentTime < 24 :
+    	   print ('Selamat sore '+nama)
+	elif currentTime > 24 :
+    	   print ('Selamat malam '+nama)
+2. angka1 = input("Angka 1: ")
+   angka2 = input("Angka 2: ")
+
+   for i in range(int(angka2)):
+      print(angka1,end=',')
+
+3. angka1 = input("Input angka 1 : ")
+   angka2 = input("Input angka 2 : ")
+   angka3 = input("Input angka 3 : ")
+
+	perkalian = int(angka1)
+	temp1_prev = int(angka1)
+	temp2_prev = int(angka2)
+	    for i in range (int(angka3)):
+         print(str(perkalian),end=',')
+         if i < 1:
+        perkalian = temp2_prev
+        else:
+           perkalian = temp1_prev*temp2_prev
+        temp2_prev = temp1_prev
+        temp1_prev = perkalian
